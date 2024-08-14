@@ -1,4 +1,3 @@
-//40c3f35e139882f9d6a3cf1a5c7207f3
 import { useState, useEffect } from "react";
 import InfoCard from "./component/info-card";
 import SearchLocation from "./component/search-location";
