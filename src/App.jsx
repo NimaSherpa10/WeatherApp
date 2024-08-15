@@ -1,3 +1,4 @@
+//40c3f35e139882f9d6a3cf1a5c7207f3
 import { useState, useEffect } from "react";
 import InfoCard from "./component/info-card";
 import SearchLocation from "./component/search-location";
@@ -27,7 +28,7 @@ function App() {
         );
 
         const hourlyResponse = await fetch(
-          `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid={API_KEY}`
         );
 
         if (!weatherResponse.ok || !hourlyResponse.ok) {
@@ -48,7 +49,7 @@ function App() {
 
   return (
     <>
-      <main className="min-h-screen flex flex-col gap-2 bg-blue-100">
+      <main className="min-h-screen flex flex-col gap-2  pb-12">
         <div className="relative h-[360px] md:h-[480px] lg:h-[600px]">
           <img
             className="bg-cover bg-center h-full w-full object-cover bg-opacity-90"
@@ -100,7 +101,9 @@ function App() {
 
               return (
                 <div key={index} className="text-center text-white mx-2">
-                  <p>{time}</p>
+                  <p className="mt-4 text-black text-semibold text-xl">
+                    {time}
+                  </p>
                   <img
                     src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}@2x.png`}
                     alt={hour.weather[0].description}
@@ -114,7 +117,7 @@ function App() {
           </div>
         </div>
 
-        <div className="">
+        <div>
           <h1 className="text-2xl text-base-300">Today's Highlight</h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-2 gap-x-0.5 place-items-center">
