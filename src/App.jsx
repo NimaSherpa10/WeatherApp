@@ -14,7 +14,7 @@ function App() {
   const [city, setCity] = useState("Seattle");
   const [data, setData] = useState(null);
   const [hourlyData, setHourlyData] = useState([]);
-  console.log(API_KEY);
+
   // require('dotenv').config();
   // const apikey = process.env.API_KEY;
 
@@ -28,7 +28,7 @@ function App() {
         );
 
         const hourlyResponse = await fetch(
-          `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid={API_KEY}`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`
         );
 
         if (!weatherResponse.ok || !hourlyResponse.ok) {
