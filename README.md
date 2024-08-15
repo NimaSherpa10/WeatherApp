@@ -1,13 +1,14 @@
 Weather App
-A weather application built with React,TailwindCSS with daisyui that displays the current weather, hourly forecast, and daily highlights for a specific location. The application uses the OpenWeatherMap API to fetch weather data.
+
+    A weather application built with React,TailwindCSS with daisyui that displays the current weather, hourly forecast, and daily highlights for a specific location. The application uses the OpenWeatherMap API to fetch weather data.
 
 #Features
--> Search Location: Users can search for a location to view its weather information.
-->Dynamic Background: The background changes based on the weather condition (Clear, Cloudy, Rain).
-->Hourly Weather Timeline: Displays the weather forecast for the next 12 hours.
-->Today's Highlight: Shows various weather metrics such as feels like temperature, visibility, wind speed, cloudiness, precipitation, and humidity.
 
-#API Documentation
+    -> Search Location: Users can search for a location to view its weather information.
+    ->Dynamic Background: The background changes based on the weather condition (Clear, Cloudy, Rain).
+    ->Hourly Weather Timeline: Displays the weather forecast for the next 12 hours.
+    ->Today's Highlight: Shows various weather metrics such as feels like temperature, visibility, wind speed, cloudiness, precipitation, and humidity.
+
 Prerequisites
 Node.js (>=12.x)
 npm or yarn
@@ -25,8 +26,6 @@ Install dependencies:
 npm install
 Or using yarn:
 
-bash
-Copy code
 yarn install
 
 ##Set up the API Key:
